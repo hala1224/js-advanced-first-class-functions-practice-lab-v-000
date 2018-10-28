@@ -14,4 +14,8 @@ const logDriversByHometown = function (arr, str) {
   
 };
 
-const 
+const driversByRevenue = function (arr) {
+  
+  
+  
+}
