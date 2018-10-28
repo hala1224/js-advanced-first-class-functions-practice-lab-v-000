@@ -20,3 +20,10 @@ function driversByRevenue(drivers) {
   })
 }
 
+function totalRevenue(drivers) {
+  const revenues = [];
+  drivers.forEach(function(driver){revenues.push(driver.revenue)})
+  return revenues.reduce(function(accumulator, currentValue, currentIndex, array) {
+    return accumulator + currentValue;
+  })
+}
