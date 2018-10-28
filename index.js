@@ -22,10 +22,12 @@ function driversByRevenue(drivers) {
 
 function driversByName(drivers) {
   return [...drivers].sort(function(a,b){
-    return a.name>b.name
+
+    str1=a.name;
+    str2=b.name
+    return str1.localeCompare(str2);
   })
 }
-
 
 function totalRevenue(drivers) {
   const revenues = [];
